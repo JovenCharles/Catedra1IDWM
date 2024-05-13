@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "bWmNX7YiPSy2S1lhVJH6F6iY0B3cZiHAyppzFbHsq04=",
+  "Source": "ebooks-dotnet7-api",
+  "BasePath": "_content/ebooks-dotnet7-api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

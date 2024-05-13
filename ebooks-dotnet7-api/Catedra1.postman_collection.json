@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "0fcb36ed-bfe0-4ced-8d70-432b07c9d765",
+		"name": "Catedra1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34205076"
+	},
+	"item": [
+		{
+			"name": "Create EBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Title\": \"COA XORETE\",\r\n    \"Author\": \"Lucky Brown\",\r\n    \"Genre\": \"XORETEEEE\",\r\n    \"Format\": \"Ebook\",\r\n    \"Price\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/ebook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"ebook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All EBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/ebook",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"ebook"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update EBook",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Title\": \"asdasdas\",\r\n    \"Author\": \"aaaaa\",\r\n    \"Genre\": \"ggggg\",\r\n    \"Format\": \"Ebookkk\",\r\n    \"Price\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/ebook/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"ebook",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Increment Stock",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": \"1\",\r\n    \"Stock\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/ebook/1/increment-stock",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"ebook",
+						"1",
+						"increment-stock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Purchase EBook",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete EBook",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/ebook/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"ebook",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
